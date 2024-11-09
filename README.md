@@ -7,15 +7,17 @@
 This repository provides a simple setup for running two Nginx-based web servers, each serving distinct HTML files with unique background colors and the Saudi Arabia flag. Perfect for testing load balancing setups and service differentiation.
 
 ## 📑 Table of Contents
-- [🚀 Getting Started](#-getting-started)
-- [🔧 Prerequisites](#-prerequisites)
-- [⚙️ Installation](#-installation)
-- [▶️ Usage](#%EF%B8%8F-usage)
-  - [Start the Containers](#starting-the-containers)
-  - [Stop and Remove Containers](#stopping-and-removing-containers)
-- [📁 File Structure](#-file-structure)
-- [🤝 Contributing](#-contributing)
-- [📜 License](#-license)
+- [🌐 Test Websites with Docker Compose](#-test-websites-with-docker-compose)
+  - [📑 Table of Contents](#-table-of-contents)
+  - [🚀 Getting Started](#-getting-started)
+    - [🔧 Prerequisites](#-prerequisites)
+    - [⚙️ Installation](#️-installation)
+  - [▶️ Usage](#️-usage)
+    - [Starting the Containers](#starting-the-containers)
+    - [Stopping and Removing Containers](#stopping-and-removing-containers)
+  - [📁 File Structure](#-file-structure)
+  - [🤝 Contributing](#-contributing)
+  - [📜 License](#-license)
 
 ## 🚀 Getting Started
 
@@ -64,11 +66,11 @@ docker-compose down
 ```
 test-websites/
 ├── docker-compose.yml      # Docker Compose file to set up services
-├── server1/
-│   ├── server1.html        # HTML file for Server 1
+├── server01/
+│   ├── server01.html        # HTML file for Server 1
 │   └── flag.jpg            # Saudi Arabia flag image for Server 1
-└── server2/
-    ├── server2.html        # HTML file for Server 2
+└── server02/
+    ├── server02.html        # HTML file for Server 2
     └── flag.jpg            # Saudi Arabia flag image for Server 2
 ```
 
