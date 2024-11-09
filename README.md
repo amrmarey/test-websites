@@ -1,33 +1,35 @@
 
-# Test Websites with Docker Compose
+# 🌐 Test Websites with Docker Compose
 
-This repository provides a simple setup for running two Nginx-based web servers, each serving distinct HTML files with unique background colors and the Saudi Arabia flag. This configuration is designed for testing load balancing and service differentiation.
+![Docker](https://img.shields.io/badge/Docker-%230db7ed.svg?&style=flat&logo=docker&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-%23009639.svg?&style=flat&logo=nginx&logoColor=white)
 
-## Table of Contents
-- [Test Websites with Docker Compose](#test-websites-with-docker-compose)
-  - [Table of Contents](#table-of-contents)
-  - [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
-  - [Usage](#usage)
-    - [Starting the Containers](#starting-the-containers)
-    - [Stopping and Removing Containers](#stopping-and-removing-containers)
-  - [File Structure](#file-structure)
-  - [Contributing](#contributing)
-  - [License](#license)
+This repository provides a simple setup for running two Nginx-based web servers, each serving distinct HTML files with unique background colors and the Saudi Arabia flag. Perfect for testing load balancing setups and service differentiation.
 
-## Getting Started
+## 📑 Table of Contents
+- [🚀 Getting Started](#-getting-started)
+- [🔧 Prerequisites](#-prerequisites)
+- [⚙️ Installation](#-installation)
+- [▶️ Usage](#%EF%B8%8F-usage)
+  - [Start the Containers](#starting-the-containers)
+  - [Stop and Remove Containers](#stopping-and-removing-containers)
+- [📁 File Structure](#-file-structure)
+- [🤝 Contributing](#-contributing)
+- [📜 License](#-license)
 
-Follow these instructions to set up and run the web servers locally.
+## 🚀 Getting Started
 
-### Prerequisites
+These instructions will help you set up and run the web servers locally.
 
+### 🔧 Prerequisites
+
+Ensure you have:
 - Docker
 - Docker Compose
 
-### Installation
+### ⚙️ Installation
 
-1. Clone this repository to your local machine:
+1. **Clone** this repository to your local machine:
    ```bash
    git clone https://github.com/amrmarey/test-websites.git
    ```
@@ -36,34 +38,32 @@ Follow these instructions to set up and run the web servers locally.
    cd test-websites
    ```
 
-## Usage
+## ▶️ Usage
 
 ### Starting the Containers
 
-To build and run the two Nginx services, execute:
+To build and start the Nginx services, run:
 
 ```bash
 docker-compose up -d
 ```
 
-- Server 1 will be available at [http://localhost:8081](http://localhost:8081)
-- Server 2 will be available at [http://localhost:8082](http://localhost:8082)
+- **Server 1** will be available at [http://localhost:8081](http://localhost:8081)
+- **Server 2** will be available at [http://localhost:8082](http://localhost:8082)
 
 ### Stopping and Removing Containers
 
-To stop and remove the running containers, execute:
+To stop and remove the containers:
 
 ```bash
-docker-compose down -v
+docker-compose down
 ```
 
-## File Structure
-
-The repository is organized as follows:
+## 📁 File Structure
 
 ```
 test-websites/
-├── docker-compose.yml      # Docker Compose file to set up two services
+├── docker-compose.yml      # Docker Compose file to set up services
 ├── server1/
 │   ├── server1.html        # HTML file for Server 1
 │   └── flag.jpg            # Saudi Arabia flag image for Server 1
@@ -72,12 +72,12 @@ test-websites/
     └── flag.jpg            # Saudi Arabia flag image for Server 2
 ```
 
-## Contributing
+## 🤝 Contributing
 
-Contributions are welcome! To contribute, please fork the repository, make your changes, and submit a pull request.
+We welcome contributions! Please fork this repository, make your changes, and submit a pull request.
 
-For any questions, feel free to contact the maintainer: [amr.marey@msn.com](mailto:amr.marey@msn.com).
+For any questions, contact the maintainer: [amr.marey@msn.com](mailto:amr.marey@msn.com).
 
-## License
+## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
