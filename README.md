@@ -67,10 +67,10 @@ docker-compose down
 test-websites/
 ├── docker-compose.yml      # Docker Compose file to set up services
 ├── server01/
-│   ├── server01.html        # HTML file for Server 1
+│   ├── index.html        # HTML file for Server 1
 │   └── flag.jpg            # Saudi Arabia flag image for Server 1
 └── server02/
-    ├── server02.html        # HTML file for Server 2
+    ├── index.html        # HTML file for Server 2
     └── flag.jpg            # Saudi Arabia flag image for Server 2
 ```
 
